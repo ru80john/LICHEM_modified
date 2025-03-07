@@ -484,9 +484,9 @@ double TINKEROptRestr(vector<QMMMAtom>& QMMMData,
     ofile << "a-axis " << LICHEMFormFloat(Lx,12) << '\n';
     ofile << "b-axis " << LICHEMFormFloat(Ly,12) << '\n';
     ofile << "c-axis " << LICHEMFormFloat(Lz,12) << '\n';
-    ofile << "alpha 90.0" << '\n';
-    ofile << "beta 90.0" << '\n';
-    ofile << "gamma 90.0" << '\n';
+    ofile << "alpha" << LICHEMFormFloat(a_angle,12) << '\n';
+    ofile << "beta" << LICHEMFormFloat(b_angle,12) << '\n';
+    ofile << "gamma" << LICHEMFormFloat(g_angle,12) << '\n';
   }
 
   ct = 0; //Generic counter
@@ -668,7 +668,11 @@ double TINKEROptRestr(vector<QMMMAtom>& QMMMData,
     ofile << LICHEMFormFloat(Lx,12) << " ";
     ofile << LICHEMFormFloat(Ly,12) << " ";
     ofile << LICHEMFormFloat(Lz,12) << " ";
-    ofile << "90.0 90.0 90.0";
+// modified
+    ofile << LICHEMFormFloat(a_angle,12) << " ";
+    ofile << LICHEMFormFloat(b_angle,12) << " ";
+    ofile << LICHEMFormFloat(g_angle,12) << " ";
+//    ofile << "90.0 90.0 90.0";
     ofile << '\n';
   }
   ct = 0; /*Counter for QM atoms*/
