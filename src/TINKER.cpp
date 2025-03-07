@@ -199,9 +199,12 @@ void TINKERInduced(vector<QMMMAtom>& QMMMData, QMMMSettings& QMMMOpts,
     outFile << "a-axis " << LICHEMFormFloat(Lx,12) << '\n';
     outFile << "b-axis " << LICHEMFormFloat(Ly,12) << '\n';
     outFile << "c-axis " << LICHEMFormFloat(Lz,12) << '\n';
-    outFile << "alpha 90.0" << '\n';
-    outFile << "beta 90.0" << '\n';
-    outFile << "gamma 90.0" << '\n';
+    outFile << "alpha " << LICHEMFormFloat(a_angle,12) << '\n';
+    outFile << "beta " << LICHEMFormFloat(b_angle,12) << '\n';
+    outFile << "gamma " << LICHEMFormFloat(g_angle,12) << '\n';    
+//    outFile << "alpha 90.0" << '\n';
+//    outFile << "beta 90.0" << '\n';
+//    outFile << "gamma 90.0" << '\n';
   }
   outFile << "save-induced" << '\n'; //Save induced dipoles
   outFile << "thermostat berendsen" << '\n';
@@ -423,9 +426,12 @@ double TINKERPolEnergy(vector<QMMMAtom>& QMMMData, QMMMSettings& QMMMOpts,
     outFile << "a-axis " << LICHEMFormFloat(Lx,12) << '\n';
     outFile << "b-axis " << LICHEMFormFloat(Ly,12) << '\n';
     outFile << "c-axis " << LICHEMFormFloat(Lz,12) << '\n';
-    outFile << "alpha 90.0" << '\n';
-    outFile << "beta 90.0" << '\n';
-    outFile << "gamma 90.0" << '\n';
+    outFile << "alpha " << LICHEMFormFloat(a_angle,12) << '\n';
+    outFile << "beta " << LICHEMFormFloat(b_angle,12) << '\n';
+    outFile << "gamma " << LICHEMFormFloat(g_angle,12) << '\n';   
+//    outFile << "alpha 90.0" << '\n';
+//    outFile << "beta 90.0" << '\n';
+//    outFile << "gamma 90.0" << '\n';
   }
   if (AMOEBA or GEM)
   {
@@ -663,9 +669,12 @@ double TINKERForces(vector<QMMMAtom>& QMMMData, VectorXd& forces,
     outFile << "a-axis " << LICHEMFormFloat(Lx,12) << '\n';
     outFile << "b-axis " << LICHEMFormFloat(Ly,12) << '\n';
     outFile << "c-axis " << LICHEMFormFloat(Lz,12) << '\n';
-    outFile << "alpha 90.0" << '\n';
-    outFile << "beta 90.0" << '\n';
-    outFile << "gamma 90.0" << '\n';
+    outFile << "alpha " << LICHEMFormFloat(a_angle,12) << '\n';
+    outFile << "beta " << LICHEMFormFloat(b_angle,12) << '\n';
+    outFile << "gamma " << LICHEMFormFloat(g_angle,12) << '\n';   
+//    outFile << "alpha 90.0" << '\n';
+//    outFile << "beta 90.0" << '\n';
+//    outFile << "gamma 90.0" << '\n';
   }
   ct = 0; //Generic counter
   for (int i=0;i<Natoms;i++)
@@ -955,9 +964,12 @@ double TINKERMMForces(vector<QMMMAtom>& QMMMData, VectorXd& forces,
     outFile << "a-axis " << LICHEMFormFloat(Lx,12) << '\n';
     outFile << "b-axis " << LICHEMFormFloat(Ly,12) << '\n';
     outFile << "c-axis " << LICHEMFormFloat(Lz,12) << '\n';
-    outFile << "alpha 90.0" << '\n';
-    outFile << "beta 90.0" << '\n';
-    outFile << "gamma 90.0" << '\n';
+    outFile << "alpha " << LICHEMFormFloat(a_angle,12) << '\n';
+    outFile << "beta " << LICHEMFormFloat(b_angle,12) << '\n';
+    outFile << "gamma " << LICHEMFormFloat(g_angle,12) << '\n';   
+//    outFile << "alpha 90.0" << '\n';
+//    outFile << "beta 90.0" << '\n';
+//    outFile << "gamma 90.0" << '\n';
   }
   if (QMMMOpts.useImpSolv)
   {
@@ -1231,9 +1243,12 @@ double TINKERPolForces(vector<QMMMAtom>& QMMMData, VectorXd& forces,
     outFile << "a-axis " << LICHEMFormFloat(Lx,12) << '\n';
     outFile << "b-axis " << LICHEMFormFloat(Ly,12) << '\n';
     outFile << "c-axis " << LICHEMFormFloat(Lz,12) << '\n';
-    outFile << "alpha 90.0" << '\n';
-    outFile << "beta 90.0" << '\n';
-    outFile << "gamma 90.0" << '\n';
+    outFile << "alpha " << LICHEMFormFloat(a_angle,12) << '\n';
+    outFile << "beta " << LICHEMFormFloat(b_angle,12) << '\n';
+    outFile << "gamma " << LICHEMFormFloat(g_angle,12) << '\n';   
+//    outFile << "alpha 90.0" << '\n';
+//    outFile << "beta 90.0" << '\n';
+//    outFile << "gamma 90.0" << '\n';
   }
   if (AMOEBA or GEM)
   {
@@ -1525,9 +1540,12 @@ double TINKEREnergy(vector<QMMMAtom>& QMMMData, QMMMSettings& QMMMOpts,
     outFile << "a-axis " << LICHEMFormFloat(Lx,12) << '\n';
     outFile << "b-axis " << LICHEMFormFloat(Ly,12) << '\n';
     outFile << "c-axis " << LICHEMFormFloat(Lz,12) << '\n';
-    outFile << "alpha 90.0" << '\n';
-    outFile << "beta 90.0" << '\n';
-    outFile << "gamma 90.0" << '\n';
+    outFile << "alpha " << LICHEMFormFloat(a_angle,12) << '\n';
+    outFile << "beta " << LICHEMFormFloat(b_angle,12) << '\n';
+    outFile << "gamma " << LICHEMFormFloat(g_angle,12) << '\n';   
+//    outFile << "alpha 90.0" << '\n';
+//    outFile << "beta 90.0" << '\n';
+//    outFile << "gamma 90.0" << '\n';
   }
   if (QMMM)
   {
@@ -1797,9 +1815,12 @@ double TINKERGEMEnergy(vector<QMMMAtom>& QMMMData, QMMMSettings& QMMMOpts,
     outFile << "a-axis " << LICHEMFormFloat(Lx,12) << '\n';
     outFile << "b-axis " << LICHEMFormFloat(Ly,12) << '\n';
     outFile << "c-axis " << LICHEMFormFloat(Lz,12) << '\n';
-    outFile << "alpha 90.0" << '\n';
-    outFile << "beta 90.0" << '\n';
-    outFile << "gamma 90.0" << '\n';
+    outFile << "alpha " << LICHEMFormFloat(a_angle,12) << '\n';
+    outFile << "beta " << LICHEMFormFloat(b_angle,12) << '\n';
+    outFile << "gamma " << LICHEMFormFloat(g_angle,12) << '\n';   
+//    outFile << "alpha 90.0" << '\n';
+//    outFile << "beta 90.0" << '\n';
+//    outFile << "gamma 90.0" << '\n';
   }
   if (QMMM)
   {
@@ -1975,9 +1996,12 @@ MatrixXd TINKERHessian(vector<QMMMAtom>& QMMMData, QMMMSettings& QMMMOpts,
     outFile << "a-axis " << LICHEMFormFloat(Lx,12) << '\n';
     outFile << "b-axis " << LICHEMFormFloat(Ly,12) << '\n';
     outFile << "c-axis " << LICHEMFormFloat(Lz,12) << '\n';
-    outFile << "alpha 90.0" << '\n';
-    outFile << "beta 90.0" << '\n';
-    outFile << "gamma 90.0" << '\n';
+    outFile << "alpha " << LICHEMFormFloat(a_angle,12) << '\n';
+    outFile << "beta " << LICHEMFormFloat(b_angle,12) << '\n';
+    outFile << "gamma " << LICHEMFormFloat(g_angle,12) << '\n';   
+//    outFile << "alpha 90.0" << '\n';
+//    outFile << "beta 90.0" << '\n';
+//    outFile << "gamma 90.0" << '\n';
   }
   ct = 0; //Generic counter
   for (int i=0;i<Natoms;i++)
@@ -2304,9 +2328,12 @@ double TINKEROpt(vector<QMMMAtom>& QMMMData, QMMMSettings& QMMMOpts, int bead,
     outFile << "a-axis " << LICHEMFormFloat(Lx,12) << '\n';
     outFile << "b-axis " << LICHEMFormFloat(Ly,12) << '\n';
     outFile << "c-axis " << LICHEMFormFloat(Lz,12) << '\n';
-    outFile << "alpha 90.0" << '\n';
-    outFile << "beta 90.0" << '\n';
-    outFile << "gamma 90.0" << '\n';
+    outFile << "alpha " << LICHEMFormFloat(a_angle,12) << '\n';
+    outFile << "beta " << LICHEMFormFloat(b_angle,12) << '\n';
+    outFile << "gamma " << LICHEMFormFloat(g_angle,12) << '\n';   
+//    outFile << "alpha 90.0" << '\n';
+//    outFile << "beta 90.0" << '\n';
+//    outFile << "gamma 90.0" << '\n';
   }
   ct = 0; //Generic counter
   if (QMMM or (Nfreeze > 0))

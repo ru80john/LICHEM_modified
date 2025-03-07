@@ -75,7 +75,7 @@ void ExtractTINKpoles(vector<QMMMAtom>& QMMMData, int bead)
   outFile.close();
   //Run poledit
   call.str("");
-  call << ".\\poledit.exe < LICHM_" << bead << ".txt > LICHM_" << bead << ".out";
+  call << "poledit < LICHM_" << bead << ".txt > LICHM_" << bead << ".out";
   globalSys = system(call.str().c_str());
   //Extract multipole frames
   call.str("");

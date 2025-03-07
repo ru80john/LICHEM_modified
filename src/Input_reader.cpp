@@ -1845,6 +1845,10 @@ void LICHEMPrintSettings(vector<QMMMAtom>& QMMMData, QMMMSettings& QMMMOpts,
         logFile << LICHEMFormFloat(Lx,10) << " ";
         logFile << LICHEMFormFloat(Ly,10) << " ";
         logFile << LICHEMFormFloat(Lz,10) << '\n';
+        logFile << " Box angles (\u212B): ";
+        logFile << LICHEMFormFloat(a_angle,10) << " ";
+        logFile << LICHEMFormFloat(b_angle,10) << " ";
+        logFile << LICHEMFormFloat(g_angle,10) << '\n';        
         logFile << " Density: ";
         initDen = LICHEMDensity(QMMMData,QMMMOpts);
         logFile << LICHEMFormFloat(initDen,10);
