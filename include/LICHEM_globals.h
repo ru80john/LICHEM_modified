@@ -38,7 +38,11 @@ namespace LICHEMGlobal
   double Lx = 10000.0; //Box length
   double Ly = 10000.0; //Box length
   double Lz = 10000.0; //Box length
-
+  // add box angles
+  double a_angle = 90.0; //Alpha angle
+  double b_angle = 90.0; //Beta angle
+  double g_angle = 90.0; //Gamma angle
+  //
   //Flags for simulation options
   bool GEM = 0; //Flag for frozen density QMMM potential
   bool AMOEBA = 0; //Flag for polarizable QMMM potential

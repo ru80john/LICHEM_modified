@@ -661,6 +661,12 @@ void ReadLICHEMInput(fstream& xyzFile, fstream& connectFile,
         PBCon = 1;
       }
     }
+    //add box angles
+    else if (keyword == "box_angles:")
+    {
+      regionFile >> a_angle >> b_angle >> g_angle;
+    }
+    //
     //START: Hatice GOKCAN
     else if (keyword == "restrain_mm:")
     {
